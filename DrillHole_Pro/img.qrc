@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/tool_icon">
+        <file>button_back .png</file>
+        <file>button_forward.png</file>
+    </qresource>
+</RCC>

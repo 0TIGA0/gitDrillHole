@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>页面</string>
+    </property>
+    <addaction name="actionhomepage"/>
+    <addaction name="actioninfo_page"/>
+    <addaction name="actionimg_page"/>
+    <addaction name="separator"/>
+    <addaction name="actionforward"/>
+    <addaction name="actionback"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actioncolor"/>
+    <addaction name="actionthickness"/>
+    <addaction name="actiontransparency"/>
+    <addaction name="actionxyz"/>
+    <addaction name="separator"/>
+    <addaction name="actionid_color"/>
+    <addaction name="actionid_size"/>
+    <addaction name="actionid_transparency"/>
+    <addaction name="actionid_font"/>
+    <addaction name="actionid_xyz"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actioncolor"/>
+   <addaction name="actionthickness"/>
+   <addaction name="actiontransparency"/>
+   <addaction name="actionxyz"/>
+   <addaction name="separator"/>
+   <addaction name="actionid_color"/>
+   <addaction name="actionid_size"/>
+   <addaction name="actionid_transparency"/>
+   <addaction name="actionid_font"/>
+   <addaction name="actionid_xyz"/>
+   <addaction name="separator"/>
+   <addaction name="actionback"/>
+   <addaction name="actionforward"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionhomepage">
+   <property name="text">
+    <string>主页</string>
+   </property>
+  </action>
+  <action name="actioninfo_page">
+   <property name="text">
+    <string>信息展示页</string>
+   </property>
+  </action>
+  <action name="actionimg_page">
+   <property name="text">
+    <string>图像展示页</string>
+   </property>
+  </action>
+  <action name="actionforward">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/tool_icon/button_back .png</normaloff>:/tool_icon/button_back .png</iconset>
+   </property>
+   <property name="text">
+    <string>前进</string>
+   </property>
+  </action>
+  <action name="actionback">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/tool_icon/button_forward.png</normaloff>:/tool_icon/button_forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>后退</string>
+   </property>
+  </action>
+  <action name="actioncolor">
+   <property name="text">
+    <string>钻孔颜色</string>
+   </property>
+  </action>
+  <action name="actionthickness">
+   <property name="text">
+    <string>钻孔粗细</string>
+   </property>
+  </action>
+  <action name="actiontransparency">
+   <property name="text">
+    <string>钻孔透明度</string>
+   </property>
+  </action>
+  <action name="actionxyz">
+   <property name="text">
+    <string>钻孔坐标</string>
+   </property>
+  </action>
+  <action name="actionid_color">
+   <property name="text">
+    <string>编码颜色</string>
+   </property>
+  </action>
+  <action name="actionid_size">
+   <property name="text">
+    <string>编码大小</string>
+   </property>
+  </action>
+  <action name="actionid_transparency">
+   <property name="text">
+    <string>编码透明度</string>
+   </property>
+  </action>
+  <action name="actionid_font">
+   <property name="text">
+    <string>编码字体</string>
+   </property>
+  </action>
+  <action name="actionid_xyz">
+   <property name="text">
+    <string>编码位置</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
